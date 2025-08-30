@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/style.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" type="image/png" href="./assets/favicon.png"/>
+		<title>Hair Salon</title>
+	</head>
+	<body class="flex flex-col min-h-screen text-white">
+		<!-- The Hero section with the navigation bar and background image -->
+		<section
+			id="hero"
+			class="flex flex-col justify-between min-h-screen bg-black/50"
+			style="
+				background-image: url('./assets/hero-bg.jpeg');
+				background-size: cover;
+				background-position: center;
+			"
+		>
+			<!-- The navbar -->
+			<nav class="relative z-20 flex items-center justify-between h-16 p-4">
+				<div class="text-xl font-extrabold md:text-2xl lg:text-3xl">
+					<a href="#" class="text-white">Trim & Tame </a>
+				</div>
+
+				<ul
+					class="items-center hidden space-x-4 font-medium capitalize md:flex"
+				>
+					<li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
+					<li><a href="#features" class="hover:text-cyan-400">Features</a></li>
+					<li><a href="#services" class="hover:text-cyan-400">Services</a></li>
+					<li>
+						<a href="#testimonials" class="hover:text-cyan-400">Testimonials</a>
+					</li>
+					<li><a href="#meet" class="hover:text-cyan-400">Meet Us</a></li>
+				</ul>
+
+				<div class="md:hidden">
+					<button id="mobile-menu-button" class="text-white focus:outline-none">
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16m-7 6h7"
+							></path>
+						</svg>
+					</button>
+				</div>
+			</nav>
+
+			<!-- Mobile Nav -->
+			<div
+				id="mobile-menu"
+				class="absolute left-0 z-10 hidden w-full h-screen p-4 md:hidden top-16 frosted-glass"
+			>
+				<ul class="flex flex-col space-y-2 capitalize">
+					<li>
+						<a href="#hero" class="block p-2 rounded hover:bg-white/10">Home</a>
+					</li>
+					<li>
+						<a href="#features" class="block p-2 rounded hover:bg-white/10"
+							>Features</a
+						>
+					</li>
+					<li>
+						<a href="#services" class="block p-2 rounded hover:bg-white/10"
+							>Services</a
+						>
+					</li>
+					<li>
+						<a href="#testimonials" class="block p-2 rounded hover:bg-white/10"
+							>Testimonials</a
+						>
+					</li>
+					<li>
+						<a href="#meet" class="block p-2 rounded hover:bg-white/10"
+							>Meet Us</a
+						>
+					</li>
+				</ul>
+			</div>
+
+			<div
+				class="flex flex-col items-center justify-center flex-grow h-full p-4 text-center"
+			>
+				<h1 class="mb-4 text-5xl font-bold md:text-7xl lg:text-8xl">
+					Art of Hair
+				</h1>
+				<p class="mb-8 text-base italic md:text-lg">
+					Embrace your perfection with our expert hair care services.
+				</p>
+
+				<div class="flex space-x-4">
+					<a
+						href="#services"
+						class="flex items-center justify-center w-24 h-10 transition duration-300 bg-transparent border rounded-sm border-cyan-500 text-cyan-500 hover:bg-teal-500 hover:text-white"
+					>
+						Find Out
+					</a>
+					<a
+						href="#meet"
+						class="flex items-center justify-center w-24 h-10 transition duration-300 bg-transparent border rounded-sm border-cyan-500 text-cyan-500 hover:bg-teal-500 hover:text-white"
+					>
+						Read More
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- The Features section -->
+
+		<section id="features" class="py-16 text-gray-800 bg-white">
+			<div class="container px-4 mx-auto">
+				<div class="mb-12 text-center">
+					<h3
+						class="mb-2 text-sm font-bold tracking-widest text-teal-500 uppercase"
+					>
+						FEATURES
+					</h3>
+					<h2
+						class="text-4xl font-extrabold leading-tight text-gray-900 md:text-5xl"
+					>
+						Why Choose Us
+					</h2>
+				</div>
+
+				<div
+					class="flex flex-col items-center gap-12 lg:flex-row lg:items-start"
+				>
+					<div class="space-y-8 lg:w-1/2">
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4 text-3xl text-teal-500">🛡️</div>
+							<div>
+								<h3 class="mb-2 text-2xl font-semibold">Experienced Staff</h3>
+								<p class="text-gray-600">
+									Our team of highly skilled stylists brings years of expertise
+									and passion to every cut and color.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4 text-3xl text-teal-500">✅</div>
+							<div>
+								<h3 class="mb-2 text-2xl font-semibold">Easy Online Booking</h3>
+								<p class="text-gray-600">
+									Schedule your perfect appointment anytime, anywhere with our
+									seamless online system.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4 text-3xl text-teal-500">💲</div>
+							<div>
+								<h3 class="mb-2 text-2xl font-semibold">Transparent Pricing</h3>
+								<p class="text-gray-600">
+									Quality services at straightforward prices, with no hidden
+									fees.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start">
+							<div class="flex-shrink-0 mr-4 text-3xl text-teal-500">✨</div>
+							<div>
+								<h3 class="mb-2 text-2xl font-semibold">Premium Products</h3>
+								<p class="text-gray-600">
+									We use only the finest, salon-grade products for exceptional
+									results and hair health.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="lg:w-1/2">
+						<div class="overflow-hidden bg-gray-200 rounded-lg shadow-xl">
+							<img
+								src="./assets/teste.jpeg"
+								alt="Hair Styling"
+								class="object-cover w-full h-auto"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- The services section -->
+
+		<section id="services" class="py-16 text-white bg-gray-900">
+			<div class="container px-4 mx-auto">
+				<div class="mb-12 text-center">
+					<h3
+						class="mb-2 text-sm font-bold tracking-widest text-teal-500 uppercase"
+					>
+						SERVICES
+					</h3>
+					<h2 class="text-4xl font-extrabold leading-tight md:text-5xl">
+						What We Offer Best
+					</h2>
+				</div>
+
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+					<div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+						<div class="mb-4 text-5xl text-teal-400">✂️</div>
+						<h3 class="mb-2 text-2xl font-semibold">Precision Haircuts</h3>
+						<p class="text-gray-400">
+							From classic to contemporary, our stylists deliver precision cuts
+							tailored to your unique style.
+						</p>
+						<div class="mt-4 text-lg font-bold text-cyan-400">₵40 - ₵80</div>
+					</div>
+
+					<div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+						<div class="mb-4 text-5xl text-teal-400">🎨</div>
+						<h3 class="mb-2 text-2xl font-semibold">
+							Vibrant Color Treatments
+						</h3>
+						<p class="text-gray-400">
+							Transform your look with our professional coloring services,
+							including highlights, balayage, and full color.
+						</p>
+						<div class="mt-4 text-lg font-bold text-cyan-400">₵80 - ₵150</div>
+					</div>
+
+					<div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+						<div class="mb-4 text-5xl text-teal-400">💆‍♀️</div>
+						<h3 class="mb-2 text-2xl font-semibold">
+							Deep Conditioning & Treatments
+						</h3>
+						<p class="text-gray-400">
+							Revitalize your hair with our nourishing deep conditioning and
+							specialized hair treatments.
+						</p>
+						<div class="mt-4 text-lg font-bold text-cyan-400">₵30 - ₵70</div>
+					</div>
+
+					<div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+						<div class="mb-4 text-5xl text-teal-400">🧖‍♀️</div>
+						<h3 class="mb-2 text-2xl font-semibold">Styling & Updos</h3>
+						<p class="text-gray-400">
+							Perfect for special occasions or a fresh new everyday look.
+						</p>
+						<div class="mt-4 text-lg font-bold text-cyan-400">₵50 - ₵100</div>
+					</div>
+
+					<div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+						<div class="mb-4 text-5xl text-teal-400">🧔</div>
+						<h3 class="mb-2 text-2xl font-semibold">Men's Grooming</h3>
+						<p class="text-gray-400">
+							Expert cuts, shaves, and beard trims for the modern man.
+						</p>
+						<div class="mt-4 text-lg font-bold text-cyan-400">₵35 - ₵60</div>
+					</div>
+
+					<div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+						<div class="mb-4 text-5xl text-teal-400">🎉</div>
+						<h3 class="mb-2 text-2xl font-semibold">Bridal & Event Hair</h3>
+						<p class="text-gray-400">
+							Stunning hairstyles to make your special day unforgettable.
+						</p>
+						<div class="mt-4 text-lg font-bold text-cyan-400">
+							Upon Consultation
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials section  -->
+		<section id="testimonials" class="py-16 text-gray-800 bg-white">
+			<div class="container px-4 mx-auto">
+				<div class="mb-12 text-center">
+					<h3
+						class="mb-2 text-sm font-bold tracking-widest text-teal-500 uppercase"
+					>
+						TESTIMONIALS
+					</h3>
+					<h2
+						class="text-4xl font-extrabold leading-tight text-gray-900 md:text-5xl"
+					>
+						What Our Clients Say
+					</h2>
+				</div>
+
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+					<div class="p-6 bg-gray-100 rounded-lg shadow-md">
+						<p class="mb-4 text-lg italic text-gray-700">
+							"Trim & Tame always delivers! My stylist truly listens to what I
+							want and makes my hair look amazing every time. Highly recommend!"
+						</p>
+						<div class="flex items-center">
+							<img
+								src="./assets/client1.jpg"
+								alt="Client 1"
+								class="object-cover w-12 h-12 mr-4 rounded-full"
+							/>
+							<div>
+								<p class="font-semibold text-gray-900">Jane Doe</p>
+								<p class="text-sm text-gray-600">Regular Client</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="p-6 bg-gray-100 rounded-lg shadow-md">
+						<p class="mb-4 text-lg italic text-gray-700">
+							"The best hair salon experience I've ever had. The staff are so
+							friendly and professional, and the atmosphere is incredibly
+							relaxing."
+						</p>
+						<div class="flex items-center">
+							<img
+								src="./assets/client2.png"
+								alt="Client 2"
+								class="object-cover w-12 h-12 mr-4 rounded-full"
+							/>
+							<div>
+								<p class="font-semibold text-gray-900">John Smith</p>
+								<p class="text-sm text-gray-600">New Customer</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="p-6 bg-gray-100 rounded-lg shadow-md">
+						<p class="mb-4 text-lg italic text-gray-700">
+							"I came in for a complete hair transformation, and they exceeded
+							all my expectations. My hair feels healthier and looks more
+							vibrant than ever!"
+						</p>
+						<div class="flex items-center">
+							<img
+								src="./assets/client3.png"
+								alt="Client 3"
+								class="object-cover w-12 h-12 mr-4 rounded-full"
+							/>
+							<div>
+								<p class="font-semibold text-gray-900">Emily White</p>
+								<p class="text-sm text-gray-600">Happy Client</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- The Contact section  -->
+		<section id="meet" class="py-16 text-white bg-gray-900">
+			<div class="container px-4 mx-auto">
+				<div class="mb-12 text-center">
+					<h3
+						class="mb-2 text-sm font-bold tracking-widest text-teal-500 uppercase"
+					>
+						CONTACT US
+					</h3>
+					<h2 class="text-4xl font-extrabold leading-tight md:text-5xl">
+						Talk With Us Today
+					</h2>
+					<p class="mt-4 text-lg text-gray-400">
+						We'd love to hear from you! Fill out the form below or find us at
+						our location.
+					</p>
+				</div>
+
+				<div
+					class="flex flex-col items-center gap-12 lg:flex-row lg:items-start"
+				>
+					<div class="w-full p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/2">
+						<form class="space-y-4">
+							<div>
+								<label
+									for="name"
+									class="block text-sm font-medium text-gray-300"
+									>Name</label
+								>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="block w-full px-4 py-2 mt-1 bg-gray-700 border border-gray-600 rounded-md focus:ring-teal-500 focus:border-teal-500"
+									placeholder="Your Name"
+									required
+								/>
+							</div>
+							<div>
+								<label
+									for="email"
+									class="block text-sm font-medium text-gray-300"
+									>Email</label
+								>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="block w-full px-4 py-2 mt-1 bg-gray-700 border border-gray-600 rounded-md focus:ring-teal-500 focus:border-teal-500"
+									placeholder="your.email@example.com"
+									required
+								/>
+							</div>
+							<div>
+								<label
+									for="phone"
+									class="block text-sm font-medium text-gray-300"
+									>Phone (Optional)</label
+								>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									class="block w-full px-4 py-2 mt-1 bg-gray-700 border border-gray-600 rounded-md focus:ring-teal-500 focus:border-teal-500"
+									placeholder="e.g., +233 24 123 4567"
+								/>
+							</div>
+							<div>
+								<label
+									for="message"
+									class="block text-sm font-medium text-gray-300"
+									>Message</label
+								>
+								<textarea
+									id="message"
+									name="message"
+									rows="5"
+									class="block w-full px-4 py-2 mt-1 bg-gray-700 border border-gray-600 rounded-md focus:ring-teal-500 focus:border-teal-500"
+									placeholder="Tell us about your hair needs or questions..."
+									required
+								></textarea>
+							</div>
+							<button
+								type="submit"
+								class="w-full px-4 py-2 font-semibold text-white transition duration-300 bg-teal-600 rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+							>
+								Send Message
+							</button>
+						</form>
+					</div>
+
+					<div class="w-full p-6 bg-gray-800 rounded-lg shadow-lg lg:w-1/2">
+						<h3 class="mb-4 text-2xl font-semibold">Our Location</h3>
+						<p class="text-gray-400">123 Haircut Street, Accra, Ghana</p>
+						<p class="mt-2 text-gray-400">Phone: +233 20 123 4567</p>
+						<p class="mt-2 text-gray-400">Email: info@trimandtame.com</p>
+						<div class="h-64 mt-6 overflow-hidden bg-gray-700 rounded-md">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.970222123512!2d-0.1983021849767223!3d5.568461095945304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf978d227920151f%3A0x6b4c1a5d6a2f8b5!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1678234567890!5m2!1sen!2sus"
+								width="100%"
+								height="100%"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="py-8 text-sm text-center text-gray-400 bg-gray-950">
+			<div class="container px-4 mx-auto">
+				<p>&copy; 2025 Trim & Tame Hair Salon. All rights reserved.</p>
+				<p class="mt-2 text-gray-500">Crafted with passion in Accra, Ghana.</p>
+			</div>
+		</footer>
+
+		<script>
+			const mobileMenuButton = document.getElementById("mobile-menu-button");
+			const mobileMenu = document.getElementById("mobile-menu");
+
+			mobileMenuButton.addEventListener("click", () => {
+				mobileMenu.classList.toggle("hidden");
+			});
+
+			// Close mobile menu when a link is clicked
+			mobileMenu.querySelectorAll("a").forEach((link) => {
+				link.addEventListener("click", () => {
+					mobileMenu.classList.add("hidden");
+				});
+			});
+
+			// Smooth scrolling for all internal links
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute("href")).scrollIntoView({
+						behavior: "smooth",
+					});
+				});
+			});
+			const sections = document.querySelectorAll("section");
+
+			const observerOptions = {
+				root: null,
+				rootMargin: "0px",
+				threshold: 0.1,
+			};
+
+			const observer = new IntersectionObserver((entries, observer) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("opacity-100", "translate-y-0");
+						entry.target.classList.remove("opacity-0", "translate-y-10");
+					} else {
+					}
+				});
+			}, observerOptions);
+
+			sections.forEach((section) => {
+				section.classList.add(
+					"transition-all",
+					"duration-1000",
+					"ease-out",
+					"opacity-0",
+					"translate-y-10"
+				);
+				observer.observe(section);
+			});
+		</script>
+	</body>
+</html>
